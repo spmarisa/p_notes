@@ -1,0 +1,6 @@
+program that creates a backup of all important files
+
+- The files and directories to be backed up are specified in a list.
+- The backup must be stored in a main backup directory.
+- The files are backed up into a zip file.
+- The name of the zip archive is the current date and time.

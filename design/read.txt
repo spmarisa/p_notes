@@ -1,0 +1,15 @@
+- What (Analysis)
+
+- How (Design)
+
+- Do It (Implementation)
+
+- Test (Testing and Debugging)
+
+- Use (Operation or Deployment)
+
+- Maintain (Refinement)
+
+Do the analysis and design. Start implementing with a simple version.
+Test and debug it. Use it to ensure that it works as expected. Now, add any features that you want and continue to
+repeat the Do It-Test-Use. cycle as many times as required. Remember, Software is grown, not built.
