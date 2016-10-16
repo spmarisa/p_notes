@@ -1,3 +1,4 @@
+#while loops
 n = 0
 while n < 5:
     print(n)
@@ -11,7 +12,7 @@ while i < 10:
 else:
     print("end of input") #else is optional
 
-
+#for loops
 for i in range(5):
     print(i)
 print("end of input")
