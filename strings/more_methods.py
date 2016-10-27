@@ -11,3 +11,9 @@ name.find('sky')
 delimeter = '_*_'
 list = ['list', 'tuple', 'dictionary', 'set']
 delimeter.join(list)
+
+#to get the index of a given value in a string
+import string
+
+fruit = "banana"
+fruit.find("n")
