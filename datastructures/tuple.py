@@ -23,3 +23,21 @@ len(new_zoo[2])
 myempty = ()
 single = (1,)
 print(single)
+
+#workaround for tuple
+a = (1, 2, 3, 4, 5)
+a = (1,) + a
+
+#use case - when a matrix has many number of zeros -then use a tuple
+matrix = [ [0,0,0,1,0],
+           [0,0,0,0,0],
+           [0,2,0,0,0],
+           [0,0,0,0,0],
+           [0,0,0,3,0] ]
+
+matrix = {(0,3): 1, (2, 1): 2, (4, 3): 3}
+
+matrix[0,3]
+
+matrix.get((0,3), 0) #first is key, second is value. get should return if the key if the key is not found in dictionary
+

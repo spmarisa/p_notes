@@ -1,3 +1,7 @@
+#everything is an object and everything got a value
+a = 1
+print(id(a))
+
 integer = 1;
 integer = 1
 
@@ -31,3 +35,4 @@ print(y)
 z = int(input("input a number"))
 print(y)
 print(type(y))
+

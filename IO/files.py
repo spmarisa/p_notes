@@ -20,3 +20,8 @@ f.close()
 
 #the mode can be read mode('r'), write mode('w'), append mode('a')
 #help(open)
+
+#read can also take an argument that indicates how many characters to read
+f = open("poem.txt", "r")
+print(f.read(5))
+

@@ -21,11 +21,27 @@ del ab['Spammer']
 #adding a key value pair
 ab['Guido'] = 'guido@python.org'
 
-#iterate through all us
-# ing items method
+#iterate through all usng items method
 for name, address in ab.items():
     print('Contact {0} at {1}'.format(name, address))
 
 #check if something exists
 if 'Guido' in ab:
     print("\nGuido's address is", ab['Guido'])
+
+
+#other methods
+ab.keys()
+ab.values()
+
+ab.has_key('Matsumoto')
+ab.has_value('Matz')
+
+
+#aliasing and copying
+opposites = {'up': 'down', 'right': 'wrong', 'true': 'false'}
+alias = opposites
+copy = opposites.copy()
+
+#for letter count
+
