@@ -2,7 +2,6 @@
 #once created a list, you can add, remove or search for items in the list
 #list is a mutable data type
 
-
 shoplist = ['apple', 'mango', 'carrot', 'banana']
 
 #print the list

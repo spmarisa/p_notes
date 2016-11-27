@@ -38,4 +38,9 @@ b ="bace"
 
 a < b
 
+#print without the new line
+n = 5
+for i in range(1, n + 1):
+    print(i, end=""),
+
 
