@@ -1,8 +1,7 @@
-lettercounts = {}
 
-for letter in "phaneendra":
-    lettercounts[letter] = lettercounts.get(letter, 0) + 1
+def solution(S):
+    print(S)
 
-lettercounts.sort()
-print(lettercounts)
+a = "())()()((()))()()(((())))((()("
 
+solution(a)
