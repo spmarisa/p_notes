@@ -9,3 +9,7 @@ print(s.lower())
 'D'.isidentifier()
 
 '1'.isdigit()
+
+
+'a'.upper()
+'G'.lower()

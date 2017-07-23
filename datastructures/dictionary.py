@@ -1,6 +1,6 @@
-#dictionary is like an address-book. we associate KEYS with VALUES
-#the KEY must be unique. use only immutable objects for the KEYS of dictionary
-#dict class - help(dict)
+# dictionary is like an address-book. we associate KEYS with VALUES
+# the KEY must be unique. use only immutable objects for the KEYS of dictionary
+# dict class - help(dict)
 ab = {
       'Larry' : 'larry@wall.org',
       'Matsumoto' : 'matz@ruby-lang.org',
@@ -9,28 +9,28 @@ ab = {
 
 print(ab)
 
-#get value for a specified key
+# get value for a specified key
 ab['Larry']
 
-#length of dictionary
+# length of dictionary
 len(ab)
 
-#deleting a key value pair
+# deleting a key value pair
 del ab['Spammer']
 
-#adding a key value pair
+# adding a key value pair
 ab['Guido'] = 'guido@python.org'
 
-#iterate through all usng items method
+# iterate through all usng items method
 for name, address in ab.items():
     print('Contact {0} at {1}'.format(name, address))
 
-#check if something exists
+# check if something exists
 if 'Guido' in ab:
     print("\nGuido's address is", ab['Guido'])
 
 
-#other methods
+# other methods
 ab.keys()
 ab.values()
 
@@ -38,10 +38,10 @@ ab.has_key('Matsumoto')
 ab.has_value('Matz')
 
 
-#aliasing and copying
+# aliasing and copying
 opposites = {'up': 'down', 'right': 'wrong', 'true': 'false'}
 alias = opposites
 copy = opposites.copy()
 
-#for letter count
+# for letter count
 

@@ -1,7 +1,7 @@
-#if you wanted to reuse a number of functions in other programs that you write
-# for writing modules, but the simplest way is to create a file with a .py extension that contains functions and variables.
-# another way is to write modules in native language(like c, python interpreter is written in c)
-#a module can be imported by another program to make use of its functionality
+# if you wanted to reuse a number of functions in other programs that you write
+# for writing modules, but the simplest way is to create a file with a .py extension that contains functions
+# another way is to write modules in native language(like c) and import in python
+# a module can be imported by another program to make use of its functionality
 
 import sys
 print('the command line arguments are:')

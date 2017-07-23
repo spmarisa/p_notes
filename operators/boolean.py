@@ -1,12 +1,12 @@
 x = True
 y = False
 
-#NOT
+# NOT
 not x
 
-#AND
+# AND
 x and y
 
-#OR
+# OR
 x or y
 

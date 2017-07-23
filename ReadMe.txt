@@ -1,3 +1,5 @@
+Guido van Rossum
+
 COMPUTATIONAL - ALGORITHMICALLY - A computational mode of thinking means that everything can be viewed as a math problem
 involving numbers and formulas.
 

@@ -24,6 +24,15 @@ delimeter = '_*_'
 list = ['list', 'tuple', 'dictionary', 'set']
 delimeter.join(list)
 
+a = "this is a string"
+a = a.split(" ") # a is converted to a list of strings.
+print(a)
+
+a = "-".join(a)
+print(a)
+
+
+
 
 #split a string
 a = "ba ba ba, ba banana na"
