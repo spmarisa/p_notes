@@ -43,7 +43,7 @@ del shoplist[0]
 a = ['a', 'b', 'c', 'd', 'e']
 
 'a' in a
-
+a.index('a')
 
 # add 2 lists
 a = [1, 2, 3]
@@ -79,4 +79,3 @@ a.split('a') #split based on the given param
 delimeter = '_*_'
 list = ['list', 'tuple', 'dictionary', 'set']
 delimeter.join(list)
-

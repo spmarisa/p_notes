@@ -1,55 +1,46 @@
+def length_between(a, b):
+    steps = 0
 
-def doWhatISay(input_command, list):
-    split_it = input_command.split(" ")
+    if a == b:
+        return steps
 
-    if(split_it[0] == 'print'):
-        print(list)
-    elif(split_it[0] == 'sort'):
-        list.sort()
-    elif(split_it[0] == 'reverse'):
-        list.reverse()
-    elif(split_it[0] == 'pop'):
-        if len(list) != 0:
-            del list[len(list) - 1]
-    elif(split_it[0] == 'append'):
-        list.append(int(split_it[1]))
-    elif(split_it[0] == 'remove'):
-        del list[list.index(int(split_it[1]))]
-    elif(split_it[0] == 'insert'):
-        print(list)
-        position = int(split_it[1])
-        value = int(split_it[2])
-        print(position)
-        print(value)
-        l1 = list[:position]
-        l2 = list[position:]
-        print(l1)
-        print(l2)
-        # print(l2)
-        # l1 = list[:position]
-        # l1.append(value)
-        # list = list[:position]
-        # print(list)
-        l1.append(value)
-        print(l1)
-        print(l2)
-        # print(list)
+    while a != b:
+        if a[0] != b[0]:
+            if a[0] > b[0]:
+                a[0] = b[0] - 1
+                a[1] = b[1] - 1
+                steps += 1
+            elif a[0] < b[0]:
+                a[0] = b[0] + 1
+                a[1] = a[1] + 1
+                steps += 1
+        elif a[1] != b[1]:
+            if a[1] > b[1]:
+                a[1] = b[1] - 1
+                
+                steps += 1
+            elif a[1] < b[1]:
+                a[1] = a[1] + 1
+                steps += 1
 
-        # list = list + l2
-        # print(list)
-        # list.append(int(split_it[2]))
+         return steps
 
-i = int(input().strip())
-list = []
+class Solution:
+    # @param X : list of integers
+    # @param Y : list of integers
+    # Points are represented by (X[i], Y[i])
+    # @return an integer
+    def coverPoints(self, X, Y):
+        input = []
+        steps = 0
 
-for i in range(i):
-    doWhatISay(input(), list)
+        for i in X:
+            input.append([X[i], Y[i]])
 
-# a = [1, 3, 5, 6, 7]
-#
-# def doIt(yes):
-#     if(yes == 'yes'):
-#         a.append(67)
-#         print(a)
-#
-# doIt('yes')
+        if len(input) == 1:
+            return 0
+
+        for i in range(len(input) - 1):
+            steps += length_between(input(i), input(i+1))
+
+        return steps
