@@ -1,5 +1,0 @@
-# maths
-
-fibonacci
-
-What happens if you invoke this function and pass a list with only one element (a singleton)?

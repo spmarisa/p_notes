@@ -1,38 +1,20 @@
-import math
-def IsPrime(A):
-        flag = True
-        if A == 1:
-            return False
-        for t in range(2,int(math.sqrt(A))+1):
-            if A%t == 0:
-                flag = False
-                break
-        return flag
+class Employee:
+    'Common base class for all employees'
+    empCount = 0
 
-class Solution:
-    # @param A : integer
-    # @return a list of integers
-    def primesum(self, A):
-        op = []
-        all_primes = []
+    def __init__(self, name, salary):
+        print('fasf sadfsdfs')
+        self.name = name
+        self.salary = salary
+        Employee.empCount += 1
 
-        for i in range(2, A):
-            if IsPrime(i):
-                all_primes.append(i)
+    def displayCount(self):
+        print
+        "Total Employee %d" % Employee.empCount
 
-        flag = False
+    def displayEmployee(self):
+        print
+        "Name : ", self.name, ", Salary: ", self.salary
 
-        for i in all_primes:
-            first_number = i
-            for j in all_primes
-                second_number = j
-                if first_number + second_number == A:
-                    op.append(first_number)
-                    op.append(second_number)
 
-                    flag = True
-                    break
-
-            if flag == True:
-                break
-        return op
+emp1 = Employee("Zara", 2000)
