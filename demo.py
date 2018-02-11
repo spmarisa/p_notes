@@ -1,20 +1,20 @@
-class Employee:
-    'Common base class for all employees'
-    empCount = 0
+def is_uniq(a):
+    # considering ascii chars
+    if len(a) > 128:
+        return False
 
-    def __init__(self, name, salary):
-        print('fasf sadfsdfs')
-        self.name = name
-        self.salary = salary
-        Employee.empCount += 1
+    array = [False] * 128
 
-    def displayCount(self):
-        print
-        "Total Employee %d" % Employee.empCount
+    for i in a:
+        key = ord(i)
+        if array[key] == True:
+            return False
+        else:
+            array[key] = True
 
-    def displayEmployee(self):
-        print
-        "Name : ", self.name, ", Salary: ", self.salary
+    return True
 
 
-emp1 = Employee("Zara", 2000)
+a = 'abcdefghijklmnona'
+print(is_uniq(a))
+
